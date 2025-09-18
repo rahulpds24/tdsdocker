@@ -16,6 +16,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Podman image build
-        run: podman build -t docker.io/rahulpds25/tdsdocker:latest .
+        run: podman build -t docker.io/rahulpds24/tdsdocker:latest .
       - name: Push to Cloud
-        run: podman push docker.io/rahulpds25/tdsdocker:latest
+        run: podman push docker.io/rahulpds24/tdsdocker:latest
